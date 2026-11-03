@@ -15,3 +15,12 @@ Verified in the browser on 2 November 2026:
 All demo content is fictional. The site makes no filesystem or Ollama calls. Download links point to the desktop project's GitHub Releases page.
 
 Manual regression: test Keep/unkeep, each file type filter, folder switching, close/reopen previews, pointer dragging and touch dragging, keyboard preview ordering, theme toggle, cleanup enabled/disabled, and the FAQ disclosures. Respect reduced-motion preferences.
+
+## 3 November update
+
+- Heading uses normal (non-italic) text.
+- Eight cursor-reactive hero files collect into the actual TempVault-logo folder on scroll. Browser verification confirmed full collection with all file opacities at zero and collection progress at one.
+- Folder covers adapt the app source colors, fanned sheets, pointer tilt and expansion timings.
+- Pointer drag from an expanded Word folder adds a third preview without removing the original two.
+- Purple selection and drop-target styling, preview entry and reordering animations, and resize handles.
+- Mobile 390px viewport: no horizontal overflow; folder opening verified. No console errors during the tested flow.

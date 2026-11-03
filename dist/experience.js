@@ -23,3 +23,5 @@ for(const p of particles){const x=p.el.offsetLeft+p.el.offsetWidth/2,y=p.el.offs
 if(moving||settle>0){settle--;frame=requestAnimationFrame(animateHero)}}
 function wakeHero(){if(reduceMotion.matches){heroFiles.forEach(el=>{el.style.transform='';el.style.opacity=''});return}settle=8;if(!frame){lastTime=performance.now();frame=requestAnimationFrame(animateHero)}}
 hero.addEventListener('pointermove',e=>{pointer={x:e.clientX,y:e.clientY};wakeHero()});hero.addEventListener('pointerleave',()=>{pointer={x:-10000,y:-10000};wakeHero()});addEventListener('scroll',wakeHero,{passive:true});addEventListener('resize',wakeHero);reduceMotion.addEventListener('change',()=>{if(frame)cancelAnimationFrame(frame);frame=0;wakeHero()});document.addEventListener('visibilitychange',()=>{if(document.hidden&&frame){cancelAnimationFrame(frame);frame=0}else wakeHero()});render();renderPreviews();wakeHero();
+
+$('#search').oninput=render;$('#filter').onchange=render;
