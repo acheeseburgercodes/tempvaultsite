@@ -1,0 +1,1 @@
+{"name":"tempvaultsite","private":true,"type":"module","scripts":{"build:demo":"vite build --config demo/vite.config.js"},"dependencies":{"react":"^19.1.1","react-dom":"^19.1.1","@fontsource-variable/manrope":"^5.3.0"},"devDependencies":{"vite":"^7.1.7","@vitejs/plugin-react":"^5.0.3","typescript":"^5.9.2"}}
